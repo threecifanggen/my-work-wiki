@@ -12,7 +12,11 @@
 
 ## 展会基于专家知识规则的推荐
 
+:::{toctree}
+:maxdepth: 1
 
+wilson_recommender
+:::
 
 ```{bibliography} references.bib
 :labelprefix: md

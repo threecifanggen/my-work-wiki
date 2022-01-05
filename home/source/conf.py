@@ -11,7 +11,7 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 # import os
-# import sys
+import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
 
@@ -30,6 +30,7 @@ author = '3gee'
 extensions = [
     'myst_parser',
     'nbsphinx',
+    "sphinx.ext.graphviz"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -87,3 +88,6 @@ myst_enable_extensions = [
     "substitution",
     "tasklist",
 ]
+
+if sys.platform == 'win32':
+    graphviz_dot_args = ['-Gfontname=Simsun', '-Efontname=Simsun', '-Nfontname=Simsun']

@@ -1,7 +1,7 @@
 # Wilson分数设定为推荐分数
 
 :::{note}
-具体的代码可以参考[这个jupyter notebook](./notebooks/wilson_recommender_notebook.ipynb)
+具体的代码可以参考[这个jupyter notebook](../../notebooks/wilson_recommender_notebook.ipynb)
 :::
 ## 背景介绍
 
@@ -28,12 +28,12 @@
 `z-score`其实给我们提供了一个方法，我们可以假设点击数符合一个二项分布，然后我们可以基于曝光数($N$)和点击数($C$)描绘点击数的分布为：
 
 $$
-C/N \sim Binom(N, \frac{C}{N}) / N
+C \sim Binom(N, \frac{C}{N})
 $$
 
 于是，我们可以通过分布图重新描述刚才**例子2**中的点击结果，可以得到，A展示品的点击率概率是50%的概率很低，而B展示品的点击率概率为49.5%的概率则很高。
 
-![](./assets/image/wilson_ab.png)
+![](../../assets/image/wilson_ab.png)
 
 我们何不比较这两个展示品的置信区间的上下限。比如，我们可以直接可以比较A点击率的下5%的分位数概率和B点击率的下5%的概率。显然，这样的话B的这个概率值就明显大于A。从这个思路出发，我们就可以设计基于置信区间的推荐分数。我们上面采用概率采样的方法，相对来说数据会不稳定，且计算量巨大，于是思路转变为，更好的计算二项分布的置信区间。
 
@@ -114,4 +114,10 @@ def W_adjust(pos, n, confidence=0.95, n1=10, n2=100):
 
 最后，我们选择了第二号方案，一部分原因是公司在设备算力上的不足，计算过于久远的Query可能计算过慢；第二原因是，对点击数做一些变化之后，可能丧失了分数的统计学意义。基于这两个理由，我们做出了最后的方案。
 
+
+:::{toctree}
+:maxdepth: 1
+
+../../notebooks/wilson_recommender_notebook.ipynb
+:::
 

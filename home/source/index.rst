@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 **黄宝臣(AKA. 3gee)的工作知识WIKI** 
-==================================
+====================================================
 
 这里主要包含 数据科学_ 和 计算机科学_  相关的技术内容，以及和数据分析、运营相关的业务知
 识。
@@ -41,12 +41,12 @@
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: 基本目录:
 
-   computer_science
-   data_science
-   reflection
+   computer_science/intro
+   data_science/intro
+   reflections/intro
 
 Indices and tables
 ==================

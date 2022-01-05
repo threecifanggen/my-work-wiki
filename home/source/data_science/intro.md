@@ -9,6 +9,12 @@
 
 以下领域做过这些尝试：
 
-* [推荐](./recommender.md)
+* [推荐](./recommender/intro.md)
 * [数值策划](#)
 * [指标设计](#)
+
+:::{toctree}
+:maxdepth: 1
+
+recommender/intro
+:::
