@@ -30,7 +30,8 @@ author = '3gee'
 extensions = [
     'myst_parser',
     'nbsphinx',
-    "sphinx.ext.graphviz"
+    "sphinx.ext.graphviz",
+    'sphinxcontrib.kroki',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
