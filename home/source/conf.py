@@ -17,7 +17,7 @@ import sys
 
 # -- Project information -----------------------------------------------------
 
-project = '黄宝臣工作WIKI'
+project = '黄宝臣工作知识库'
 copyright = '2022, 3gee'
 author = '3gee'
 # ########niginx directory: /usr/share/nginx
