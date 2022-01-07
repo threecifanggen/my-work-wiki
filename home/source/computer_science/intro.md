@@ -6,4 +6,5 @@
 elm_learning_notes/intro
 github_actions/intro
 midi/intro
+mysql/intro
 :::
