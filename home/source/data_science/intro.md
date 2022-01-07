@@ -12,6 +12,7 @@
 :::{toctree}
 :maxdepth: 1
 
+wideviews_of_ds
 recommender/intro
 deep_learning/intro
 numerical_planning/intro
