@@ -15,4 +15,6 @@
 recommender/intro
 deep_learning/intro
 numerical_planning/intro
+ab_test/intro
+simulation/intro
 :::
