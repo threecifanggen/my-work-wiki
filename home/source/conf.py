@@ -14,6 +14,10 @@
 import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import sphinx.application
+import sphinx.errors
+sphinx.application.ExtensionError = sphinx.errors.ExtensionError
+
 
 # -- Project information -----------------------------------------------------
 
@@ -32,6 +36,8 @@ extensions = [
     'nbsphinx',
     "sphinx.ext.graphviz",
     'sphinxcontrib.kroki',
+    'sphinxcontrib.googleanalytics',
+    "sphinx_comments",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -92,3 +98,17 @@ myst_enable_extensions = [
 
 if sys.platform == 'win32':
     graphviz_dot_args = ['-Gfontname=Simsun', '-Efontname=Simsun', '-Nfontname=Simsun']
+
+googleanalytics_id = "UA-56025474-2"
+
+# 评论配置
+comments_config = {
+   "hypothesis": True,
+   "utterances": {
+      "repo": "threecifanggen/my-work-wiki",
+      "issue-term": "pathname",
+      "crossorigin": "anonymous",
+      "theme": "github-light"
+   }
+}
+
