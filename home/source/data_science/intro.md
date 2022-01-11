@@ -7,6 +7,22 @@
 的地方，如何用数据科学/数学思维解决一个传统上没法套用的领域或问题；或者，在
 一个缺乏理论支持的解决方案中找到可以让流程/工作/解决方案更具科学性的方法。
 
+
+:::{graphviz}
+digraph G {
+    rankdir="LR"
+    node [shape=box]
+    数据量 -> 微数据
+    数据量 -> 小数据
+    数据量 -> 大数据
+
+    微数据 -> "假设/仿真/模拟"
+
+    小数据 -> "描述性统计/统计推断/机器学习"
+
+    大数据 -> "数据工程/描述性统计/深度学习"
+}
+:::
 ## 进一步阅读
 
 :::{toctree}
@@ -18,4 +34,5 @@ deep_learning/intro
 numerical_planning/intro
 ab_test/intro
 simulation/intro
+CASI/intro
 :::

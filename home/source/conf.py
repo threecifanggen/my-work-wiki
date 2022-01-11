@@ -21,7 +21,7 @@ sphinx.application.ExtensionError = sphinx.errors.ExtensionError
 
 # -- Project information -----------------------------------------------------
 
-project = '黄宝臣工作知识库'
+project = '3gee工作知识库'
 copyright = '2022, 3gee'
 author = '3gee'
 # ########niginx directory: /usr/share/nginx
@@ -39,6 +39,8 @@ extensions = [
     'sphinxcontrib.googleanalytics',
     "sphinx_comments",
 ]
+
+html_favicon = '3gee-logo.ico'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -78,6 +80,7 @@ html_static_path = ['_static']
 source_suffix = {
     '.rst': 'restructuredtext',
     '.txt': 'markdown',
+    '.myst.md': 'markdown',
     '.md': 'markdown',
 }
 
@@ -99,7 +102,7 @@ myst_enable_extensions = [
 if sys.platform == 'win32':
     graphviz_dot_args = ['-Gfontname=Simsun', '-Efontname=Simsun', '-Nfontname=Simsun']
 
-googleanalytics_id = "UA-56025474-2"
+googleanalytics_id = "UA-56025474-4"
 
 # 评论配置
 comments_config = {
@@ -112,3 +115,6 @@ comments_config = {
    }
 }
 
+
+html_search_language = 'zh'
+html_show_sourcelink = False

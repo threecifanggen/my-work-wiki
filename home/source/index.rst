@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-**黄宝臣(AKA. 3gee)的工作知识库** 
+**3gee的工作知识库** 
 ====================================================
 
 这里主要包含 数据科学_ 和 计算机科学_  相关的技术内容，以及和数据分析、运营相关的业务知

@@ -8,4 +8,6 @@ github_actions/intro
 midi/intro
 mysql/intro
 shell/intro
+nginx/intro
+actor/intro
 :::
