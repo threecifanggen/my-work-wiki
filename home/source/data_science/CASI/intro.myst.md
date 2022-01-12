@@ -44,3 +44,11 @@ digraph G {
     }
 }
 ```
+
+```{toctree}
+---
+maxdepth: 1
+---
+
+chapter.6
+```

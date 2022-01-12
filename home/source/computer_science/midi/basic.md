@@ -61,4 +61,49 @@ NOTE OFF结构如下：
 
 ## 选择乐器
 
-（待续）
+```{seealso}
+在[这里](http://www.midi.org/techspecs/gm1sound.php)可以找到对应信息。
+```
+
+有一个MIDI消息专门用来对应乐器，叫做「program change」消息，一般有1个字节STATUS和一个字节DATA组成：
+
+* Status byte : 1100 CCCC
+* Data byte 1 : 0XXX XXXX
+
+CCCC表示MIDI的channel，XXXXXXX表示乐器号（从0~127），一般来说57表示小号，可以通过设定56得到小号的数信息。 
+
+## 鼓乐器
+
+```{seealso}
+在[这里](http://www.midi.org/techspecs/gm1sound.php)可以找到对应信息。
+```
+
+鼓没有任何音高，一般10号channel可以代表鼓信息。
+
+```bash
+0x99 0x23 0x40
+```
+
+发送这个信息，可以0x99表示STATUS，使用NOTEON并且用10号通道（标号9），0x23表示35，是原声低音鼓。0x64 是64表示速度。
+
+```bash
+0x89 0x23 0x00
+```
+
+同样，这样就可以NOTE OFF了。
+
+## 使用MIDI Channel
+
+（待续。）
+
+## MIDI控制器
+
+事实上，一共有128个MINI控制器被定义，但是很少使用。MIDI控制器最早就是为了让合成器演奏音符的，但是也会有多的值来表示别的信息，比如下面的内容：
+
+* Status byte : 1011 CCCC
+* Data byte 1 : 0NNN NNNN
+* Data byte 2 : 0VVV VVVV
+
+CCCC是MIDE的channel，NNNNNNN则是控制器号（从0~127），VVVVVVV则是设定给控制器的值。
+
+常见的控制器数字如下
