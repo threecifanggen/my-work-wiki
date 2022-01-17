@@ -25,9 +25,10 @@ digraph G {
 :::
 ## 进一步阅读
 
-:::{toctree}
-:maxdepth: 1
-
+```{toctree}
+---
+maxdepth: 1
+---
 wideviews_of_ds
 recommender/intro
 deep_learning/intro
@@ -35,4 +36,5 @@ numerical_planning/intro
 ab_test/intro
 simulation/intro
 CASI/intro
-:::
+audio_analysis/intro
+```

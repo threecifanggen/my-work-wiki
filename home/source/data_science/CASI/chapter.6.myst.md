@@ -1,4 +1,4 @@
-# 经验贝叶斯
+# 第六章 经验贝叶斯
 
 ```{seealso}
 相关内容参考[这个Jupyter Notebook](chapter.6.jupyter)。

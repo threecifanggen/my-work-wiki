@@ -40,8 +40,6 @@ extensions = [
     "sphinx_comments",
 ]
 
-html_favicon = '3gee-logo.ico'
-
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -68,7 +66,7 @@ html_theme = 'sphinx_book_theme'
 html_theme_options = {
     'repository_url' : 'https://github.com/threecifanggen/my-work-wiki',
     "use_repository_button": True,
-    "show_navbar_depth": 3
+    "show_navbar_depth": 1
 }
 
 
@@ -118,3 +116,12 @@ comments_config = {
 
 html_search_language = 'zh'
 html_show_sourcelink = False
+
+myst_html_meta = {
+    "description lang=zh_CN": "黄宝臣(AKA 3GEE)的工作百科（包括数据科学和计算机科学）",
+    "keywords": "3GEE, threecifanggen, 黄宝臣, 3gee, 数据科学, 计算机科学, Computer Science, Data Science",
+}
+
+html_favicon = 'logo/3gee-logo.ico'
+html_logo = "logo/3gee-logo-circle.png"
+html_title = "3GEE工作知识库"
