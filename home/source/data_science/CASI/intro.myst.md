@@ -65,8 +65,8 @@ name: 120年内数据科学维度倾向变化
 3. 1925：Fisher的估计论文
 4. 1933：Neyman和Pearson的最优假设检验
 5. 1937：Neyman置信区间
-6. 1950：Wald的《统计决策函数》出版，决策理论全面数学化；Savagi和de Finetti的贝叶斯推断的决策理论公式。此时也是离引用最远的地方
-7. 1962：电子计算，Tukey主张数据分析的未来应该是引用和计算；Mosteller和Tukey建议叫「数据分析」
+6. 1950：Wald的《统计决策函数》出版，决策理论全面数学化；Savagi和de Finetti的贝叶斯推断的决策理论公式。此时也是离应用最远的地方
+7. 1962：电子计算，Tukey主张数据分析的未来应该是应用和计算；Mosteller和Tukey建议叫「数据分析」
 8. 1972：Cox的比例风险论文，标志生物统计学应用，此时也是生存分析的黄金时代。
 9. 1979：bootstrap及后来MCMC应用；电子计算开始用于经典统计推断
 10. 1995：FDR（错误发现率）和FDR控制；LASSO
@@ -83,4 +83,5 @@ maxdepth: 1
 chapter.6
 chapter.7
 chapter.9
+chapter.10
 ```

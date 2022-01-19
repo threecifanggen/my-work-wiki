@@ -7,5 +7,6 @@
 :::{toctree}
 :maxdepth: 1
 
+operation_research/intro
 category_theory/intro
 :::

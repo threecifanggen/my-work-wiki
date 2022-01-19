@@ -9,8 +9,8 @@
 这里主要包含 数据科学_ 和 计算机科学_  相关的技术内容，以及和数据分析、运营相关的业务知
 识。
 
-.. _数据科学: data_science.html
-.. _计算机科学: computer_science.html
+.. _数据科学: data_science/intro.html
+.. _计算机科学: computer_science/intro.html
 
 初衷
 -----------------
