@@ -1,3 +1,10 @@
+---
+html_meta:
+    "description": "数据科学相关汇总"
+    "author": "黄宝臣, 3gee, threecifanggen"
+    "keywords": "3gee, threecifanggen, 工作百科, 数据科学, 计算机科学, 黄宝臣"
+    "property=og:locale": "zh_CN"
+---
 # 数据科学相关汇总
 
 在工作中，除了会遇到我们常见的大数据问题（更多是工程层面的问题），大部分需要
@@ -37,4 +44,5 @@ ab_test/intro
 simulation/intro
 CASI/intro
 audio_analysis/intro
+or_tools/intro
 ```
