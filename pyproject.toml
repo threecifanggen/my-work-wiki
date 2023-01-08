@@ -3,6 +3,9 @@ name = "my-work-wiki"
 version = "0.1.0"
 description = ""
 authors = ["Huang Baochen <huangbaochenwo@live.com>"]
+packages = [
+    { include = "home/source" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.7"
@@ -14,9 +17,17 @@ nbsphinx = "^0.8.8"
 sphinxcontrib-kroki = "^1.3.0"
 sphinxcontrib-googleanalytics = "^0.1"
 sphinx-comments = "0.0.3"
+pysftp = "^0.2.9"
 
 [tool.poetry.dev-dependencies]
 
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+init = "poetry_scripts:init"
+show = "poetry_scripts:show"
+show_remote = "poetry_scripts:show_remote"
+publish = "poetry_scripts:publish"
+build = "poetry_scripts:build"
