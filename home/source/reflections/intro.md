@@ -6,4 +6,5 @@
 :maxdepth: 1
 
 ds-progress
+rethink_ds_model
 :::

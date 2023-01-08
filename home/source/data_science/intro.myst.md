@@ -45,4 +45,5 @@ simulation/intro
 CASI/intro
 audio_analysis/intro
 or_tools/intro
+medicine_stat/intro
 ```

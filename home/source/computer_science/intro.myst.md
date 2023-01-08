@@ -10,4 +10,5 @@ mysql/intro
 shell/intro
 nginx/intro
 actor/intro
+fastapi/intro
 :::

@@ -19,3 +19,21 @@
 ```
 
 光谱的重力中心（？, the center of gravity of the spectrum）。判断谱的中心，WIKI上描述可以判断声音的亮度（Brightness）。
+
+## Spectral Spread
+
+频扩表示背离光谱中心的程度。
+
+## Spread Entropy
+
+## Spread Flux
+
+## Spread Rolloff
+
+## MFCC
+
+MFCC(Mel Frequency Cepstral Coefficients)。
+
+## Chroma Vector
+
+## Chroma Deviation
